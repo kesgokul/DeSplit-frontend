@@ -1,10 +1,7 @@
 import Head from "next/head";
-import { Inter } from "@next/font/google";
 import styles from "@/styles/Home.module.css";
 import Header from "@/components/Header";
-import ExpenseCard from "@/components/ExpenseCard";
-
-const inter = Inter({ subsets: ["latin"] });
+import PayForm from "@/components/PayForm";
 
 export default function Home() {
   return (
@@ -20,12 +17,8 @@ export default function Home() {
       </Head>
       <Header />
       <main className={styles.main}>
-        <div className="flex flex-col gap-4">
-          <ExpenseCard />
-          <ExpenseCard />
-          <ExpenseCard />
-          <ExpenseCard />
-        </div>
+        <h1>PAY AND SPLIT</h1>
+        <PayForm />
       </main>
     </>
   );

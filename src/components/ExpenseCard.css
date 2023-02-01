@@ -1,0 +1,7 @@
+#splits {
+  display: block;
+}
+
+#splits.hidden {
+  display: none;
+}
